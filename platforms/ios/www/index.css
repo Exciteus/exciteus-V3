@@ -1,0 +1,247 @@
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    letter-spacing: -0px;
+    margin-top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: /*rgb(65, 32, 155)*/ #1D0F48;
+    /*
+    background: linear-gradient(200deg, rgb(65, 32, 155), #1E0F47);*/
+    height: 100%;
+    margin: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "BebasNeue-Regular";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    
+}
+.header {
+    position: fixed;
+    padding: 0;
+    margin:0;
+    height: 60px;
+    width: 100%;
+    background-color: #1D0F48;
+    background-color: #1D0F48;
+}
+
+h4 {
+    margin: 0;
+   
+    padding: 0;
+    color: #C6C1D1;
+    overflow: hidden;
+     font-size: 1.1em;
+    font-weight: 500;
+    
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    color: #F71BAD;
+    font-size: 1.1em;
+}
+
+.background-nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    color: #180B3D;
+}
+
+h1 {
+    font-size: 2.3em;
+    margin-top: 70px;
+    color: #46BDD5;
+    font-family: "BebasNeue-Bold";
+}
+
+.event-item {
+    background-color: rgba(24, 11, 61, 0.3);
+     background-color: rgba(24, 11, 61, 0.3);
+    background-color:RGBA(47, 47, 65, 0.30);
+    
+    margin-top: 25px;
+    margin-bottom: 20px;
+   
+    
+    border: none;
+    border-radius: 7px;
+    border-radius: 7px;
+     
+
+    
+}
+
+.event-item-highlight {
+    
+    background-color: #180B3D;
+    background-color:RGBA(47, 47, 65, 0.30);
+    
+    
+    margin-top: 35px;
+    /*
+    border-bottom: 2px solid #F71BAD;*/
+    
+    border-top: 2px solid #F71BAD;
+    border:none;
+    border:none;
+  
+}
+
+main .icon {
+    height: 55px;
+    width: 55px;
+   float: left;
+}
+
+.event-div {
+    position: relative;
+    top:10px;
+    height: 75px;
+    
+
+    
+    
+    
+    
+    
+}
+.event-item .coverphoto {
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: -3px;
+    max-height: 200px;
+    
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h3 {
+    font-size: 1.1em;
+    color: #F5C8EA;
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    padding-left: 5px;
+   
+}
+
+.event-div-info {
+    position: relative;
+    top: -43px;
+    left: 220px;
+    width: auto;
+}
+
+
+.event-div-info h5 {
+    /*
+    background-color: rgb(44, 22, 105);
+    border: 5px solid rgb(44, 22, 105);
+    
+    border-radius: 2px;
+    */
+    padding-left: 2px;
+    padding-top: 4px;
+    display: inline-block;
+}
+
+@media screen and (min-width: 400px) {
+    .event-div-info {
+        left: 170px;
+    }
+    
+  }
+
+@media screen and (max-width: 400px) { /* iphone */
+    .event-div-info {
+        left: 150px;
+    }
+    h2 {
+          font-size: 1.3em;
+      }
+   
+  }
+
+  @media screen and (max-width: 360px) {
+    .event-div-info {
+        left: 140px;
+        top: -35px;
+    }
+      h2 {
+          font-size: 1.1em;
+      }
+      h3 {
+          font-size: 0.9em;
+      }
+      h4 {
+          font-size: 0.8em;
+      }
+      h5 {
+          font-size: 0.8em;
+      }
+  }
+
+  @media screen and (max-width: 340px) {
+    .event-div-info {
+        left: 110px;
+    }
+      h2 {
+          font-size: 1em;
+      }
+      h3 {
+          font-size: 0.8em;
+      }
+      h4 {
+          font-size: 0.8em;
+      }
+      h5 {
+          font-size: 0.8em;
+      }
+  }
+
+.icon {
+    padding-right: 15px;
+    padding-top: 2px;
+    margin-bottom: 10Px;
+    
+}
+
+
+/* preloader */
+
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    /*background: #1E0F47 url('http://samherbert.net/svg-loaders/svg-loaders/rings.svg') no-repeat center center;*/
+    background: #1E0F47 url('img/preloader_edit.svg') no-repeat center center;
+    background-size: 90px;
+    
+}
+.icon-small  {
+    font-size: 16px !important;
+    vertical-align: middle;
+}
+#myHeader {
+    z-index: 100;
+}
