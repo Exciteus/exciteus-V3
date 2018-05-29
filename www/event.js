@@ -99,18 +99,8 @@ $(document).ready(function () {
 
             });
             */
-<<<<<<< HEAD
-            var promo = data.promotion.shortName;
-            console.log(promo);
-            if (!promo || promo == undefined || promo == "" || promo.length == 0 || promo == "GEEN PROMOTIE") {
-                promo = "";
-            }
-
-            /* adres short: " /*data.place.name*/
-=======
 
 
->>>>>>> parent of 131fa8e... Version 1.0.4
 
             if ((data.stories.length) > 0) {
                 storiesAvailable = true;
@@ -226,8 +216,8 @@ $(document).ready(function () {
                 }
 
             });
-
-
+            
+            
 
             let app = {
                 init: function () {
@@ -356,7 +346,7 @@ $(document).ready(function () {
                         $.ajax({
                             async: true,
                             crossDomain: true,
-                            url: url + "external/stories/" + id,
+                            url: url+"external/stories/" + id,
                             data: formDataToUpload, // Add as Data the Previously create formData
                             type: "POST",
                             contentType: false,
@@ -783,6 +773,6 @@ $(document).ready(function () {
     }
 
 
-
+    
 
 });

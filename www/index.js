@@ -65,17 +65,7 @@ $(document).ready(function () {
                         var time_upper = timeConverter(element.startTime);
                         var time = time_upper.toLowerCase();
 
-<<<<<<< HEAD
-                var promo = element.promotion.name;
-                console.log(promo);
-                
 
-                if (!promo || promo == undefined || promo == "" || promo.length == 0 || promo == "GEEN PROMOTIE") {
-                    promo = "";
-                }
-=======
-
->>>>>>> parent of 131fa8e... Version 1.0.4
 
                         /*
 
