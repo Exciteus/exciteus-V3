@@ -154,6 +154,7 @@ $(document).ready(function () {
             setTimeout(function () {
                 $('#preloader').fadeOut('slow', function () {
                     $(this).remove();
+                    document.addEventListener('deviceready', app.init);
                     $('#back-arrow').click(function () {
                         window.location.href = 'overview.html';
                     });
