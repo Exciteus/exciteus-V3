@@ -171,10 +171,14 @@ h3 {
 @media screen and (max-width: 400px) { /* iphone */
     .event-div-info {
         left: 150px;
+        
     }
     h2 {
-          font-size: 1.3em;
+          font-size: 1.1em;
       }
+    h3 {
+        font-size: 0.8em;
+    }
    
   }
 
@@ -184,7 +188,7 @@ h3 {
         top: -35px;
     }
       h2 {
-          font-size: 1.1em;
+          font-size: 1em;
       }
       h3 {
           font-size: 0.9em;
@@ -202,7 +206,7 @@ h3 {
         left: 110px;
     }
       h2 {
-          font-size: 1em;
+          font-size: 0.8em;
       }
       h3 {
           font-size: 0.8em;
