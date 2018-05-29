@@ -30,7 +30,7 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     background-repeat: no-repeat;
-   
+   padding-left: 2px;
     font-family: "BebasNeue-Book";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ body {
     position: fixed;
     padding: 0;
     margin:0;
-    margin-left: -25px;
+    margin-left: -27px;
     height: 60px;
     width: 100%;
     background-color: #1D0F48;

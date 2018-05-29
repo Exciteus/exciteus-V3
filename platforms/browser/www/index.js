@@ -65,7 +65,17 @@ $(document).ready(function () {
                         var time_upper = timeConverter(element.startTime);
                         var time = time_upper.toLowerCase();
 
-
+                        var promo = element.promotion.name;
+                        console.log(promo);
+                
+                        if (promo === null) {
+                            console.log("LEGE PROMOTIE");
+                            promo = "";
+                        }
+                
+                        if (promo === "GEEN PROMOTIE") {
+                            promo = "";
+                        }
 
                         /*
 
@@ -77,44 +87,29 @@ $(document).ready(function () {
 
                         if (element.highlighted == true) {
                             if (element.category == "CAFE") {
-                                nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 3px solid #F71BAD;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
+                                nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 3px solid #F71BAD;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h5>" + promo + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
                                 
                             }
                             else {
-                                nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 3px solid #F71BAD;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small '>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
+                                nextstring = "<div class='event-item' category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "' style='border-bottom: 3px solid #F71BAD;' ><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small '>access_time</i> " + time + "</h4><h5>" + promo + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
                                 
                             }
 
                             
                         } else {
                             if (element.category == "CAFE") {
-                                nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
+                                nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h5>" + promo + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
                                 
                             }
                             else {
-                                nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5>" + element.promotion.name + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
+                                nextstring = "<div class='event-item'  category='" + element.category + "' address='" + element.place.address + "' id='" + element.id + "'><img class='icon' src='" + element.icon + "'><div class='event-div'><h2>" + element.title + "</h2><h3>" + element.place.name + "</h3><div class='event-div-info'><h4><i class='material-icons icon-small'>access_time</i> " + time + "</h4><h5>" + promo + "</h5></div></div><img class='coverphoto' src='" + element.coverPhoto + "'></div>";
                                 
                             }
-                            
-                            
-                            
-                            
+    
                         }
-
-
-
-
 
                         htmlstring += nextstring;
                         console.log(htmlstring);
-
-                  
-
-
-
-
-
-
 
             });
             output.innerHTML = htmlstring;
